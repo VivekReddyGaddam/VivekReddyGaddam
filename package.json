@@ -1,0 +1,43 @@
+{
+  "name": "storyforge-ai",
+  "version": "1.0.0",
+  "description": "AI-Powered Narrative Engine for Interactive Storytelling",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd client && npm install",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "keywords": ["ai", "storytelling", "narrative", "interactive"],
+  "author": "Vivek Reddy Gaddam",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "axios": "^1.5.0",
+    "socket.io": "^4.7.2",
+    "langchain": "^0.0.150",
+    "@huggingface/inference": "^2.6.4",
+    "redis": "^4.6.8",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^6.10.0",
+    "winston": "^3.10.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.1",
+    "eslint": "^8.50.0",
+    "jest": "^29.7.0"
+  }
+}
