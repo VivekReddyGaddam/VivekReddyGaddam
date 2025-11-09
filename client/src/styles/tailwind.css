@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary-50: 240 249 255;
+    --color-primary-100: 224 242 254;
+    --color-primary-200: 186 230 253;
+    --color-primary-300: 125 211 252;
+    --color-primary-400: 56 189 248;
+    --color-primary-500: 37 99 235;
+    --color-primary-600: 37 99 235;
+    --color-surface: 249 250 251;
+  }
+
+  body {
+    @apply bg-surface;
+  }
+}
+
+@layer utilities {
+  .bg-surface {
+    background-color: rgb(var(--color-surface));
+  }
+}
